@@ -8,3 +8,6 @@ body {
 *[draggable] {
   cursor: move !important;
 }
+/* *{
+  outline: none;
+} */

@@ -4,6 +4,7 @@ import {Element, useEditor} from "@craftjs/core";
 import Text from "./user/Text";
 import Container from "./user/Container";
 import Button from "./user/Button";
+import { Card } from "./user/Card";
 
 export const Toolbox = () => {
     const {connectors, query} = useEditor()
@@ -22,6 +23,9 @@ export const Toolbox = () => {
                 </Grid>
                 <Grid container direction="column" item>
                     <MaterialButton ref={ref => connectors.create(ref, <Button variant="contained" color="primary">Click Me !</Button>)} variant="contained">Bouton</MaterialButton>
+                </Grid>
+                <Grid container direction="column" item>
+                    <MaterialButton ref={ref => connectors.create(ref, <Card />)} variant="contained">Carte</MaterialButton>
                 </Grid>
             </Grid>
         </Box>
